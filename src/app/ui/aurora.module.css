@@ -1,0 +1,78 @@
+@keyframes rotateClockwise {
+  100% {
+    transform: rotate(1turn) translate(100px) rotate(-1turn);
+  }
+}
+
+@keyframes rotateCounterClockwise {
+  100% {
+    transform: rotate(-1turn) translate(100px) rotate(1turn);
+  }
+}
+
+.container {
+  background-color: aquamarine;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: -10;
+}
+
+.base {
+  position: absolute;
+  filter: blur(60px);
+  opacity: 0.8;
+}
+
+.one,
+.two,
+.three,
+.four {
+  position: absolute;
+  border-radius: 100%;
+}
+
+.one {
+  background-color: #604db7;
+  width: 85%;
+  height: 90%;
+  left: -30%;
+  top: -35%;
+  z-index: -1;
+  animation: rotateClockwise 12s linear infinite;
+  transform: rotate(0) translate(80px) rotate(0);
+}
+
+.two {
+  background-color: #cf7b9f;
+  width: 80%;
+  height: 85%;
+  left: -20%;
+  bottom: -20%;
+  z-index: -3;
+  animation: rotateClockwise 10s linear infinite;
+  transform: rotate(0) translate(80px) rotate(0);
+}
+
+.three {
+  background-color: #3261c8;
+  width: 80%;
+  height: 80%;
+  right: -20%;
+  bottom: -40%;
+  z-index: -2;
+  animation: rotateClockwise 8s linear infinite;
+  transform: rotate(0) translate(80px) rotate(0);
+}
+
+.four {
+  background-color: #7f48a4;
+  width: 80%;
+  height: 90%;
+  right: -20%;
+  top: -10%;
+  z-index: -4;
+  animation: rotateCounterClockwise 20s linear infinite;
+  transform: rotate(0) translate(100px) rotate(0);
+}
