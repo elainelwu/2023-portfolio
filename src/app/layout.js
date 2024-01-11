@@ -1,7 +1,7 @@
 import { Syne } from 'next/font/google'
 import './globals.css'
 
-const syne = Syne({ weight: '600', subsets: ['latin'] })
+const syne = Syne({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
