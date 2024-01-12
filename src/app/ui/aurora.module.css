@@ -28,7 +28,15 @@
 .one,
 .two,
 .three,
-.four {
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve {
   position: absolute;
   border-radius: 100%;
 }
@@ -68,6 +76,94 @@
 
 .four {
   background-color: #7f48a4;
+  width: 80%;
+  height: 90%;
+  right: -20%;
+  top: -10%;
+  z-index: -4;
+  animation: rotateCounterClockwise 20s linear infinite;
+  transform: rotate(0) translate(100px) rotate(0);
+}
+
+.five {
+  background-color: #7f48a4;
+  width: 85%;
+  height: 90%;
+  left: -30%;
+  top: -35%;
+  z-index: -1;
+  animation: rotateClockwise 12s linear infinite;
+  transform: rotate(0) translate(80px) rotate(0);
+}
+
+.six {
+  background-color: #604db7;
+  width: 80%;
+  height: 85%;
+  left: -20%;
+  bottom: -20%;
+  z-index: -3;
+  animation: rotateClockwise 10s linear infinite;
+  transform: rotate(0) translate(80px) rotate(0);
+}
+
+.seven {
+  background-color: #cf7b9f;
+  width: 80%;
+  height: 80%;
+  right: -20%;
+  bottom: -40%;
+  z-index: -2;
+  animation: rotateClockwise 8s linear infinite;
+  transform: rotate(0) translate(80px) rotate(0);
+}
+
+.eight {
+  background-color: #3261c8;
+  width: 80%;
+  height: 90%;
+  right: -20%;
+  top: -10%;
+  z-index: -4;
+  animation: rotateCounterClockwise 20s linear infinite;
+  transform: rotate(0) translate(100px) rotate(0);
+}
+
+.nine {
+  background-color: #3261c8;
+  width: 85%;
+  height: 90%;
+  left: -30%;
+  top: -35%;
+  z-index: -1;
+  animation: rotateClockwise 12s linear infinite;
+  transform: rotate(0) translate(80px) rotate(0);
+}
+
+.ten {
+  background-color: #7f48a4;
+  width: 80%;
+  height: 85%;
+  left: -20%;
+  bottom: -20%;
+  z-index: -3;
+  animation: rotateClockwise 10s linear infinite;
+  transform: rotate(0) translate(80px) rotate(0);
+}
+
+.eleven {
+  background-color: #604db7;
+  width: 80%;
+  height: 80%;
+  right: -20%;
+  bottom: -40%;
+  z-index: -2;
+  animation: rotateClockwise 8s linear infinite;
+  transform: rotate(0) translate(80px) rotate(0);
+}
+
+.twelve {
+  background-color: #cf7b9f;
   width: 80%;
   height: 90%;
   right: -20%;
