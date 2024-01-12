@@ -25,24 +25,15 @@
   opacity: 0.8;
 }
 
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven,
-.eight,
-.nine,
-.ten,
-.eleven,
-.twelve {
+.top_left,
+.bot_right,
+.bot-left,
+.top-right {
   position: absolute;
   border-radius: 100%;
 }
 
-.one {
-  background-color: #604db7;
+.top_left {
   width: 85%;
   height: 90%;
   left: -30%;
@@ -52,8 +43,7 @@
   transform: rotate(0) translate(80px) rotate(0);
 }
 
-.two {
-  background-color: #cf7b9f;
+.bot_left {
   width: 80%;
   height: 85%;
   left: -20%;
@@ -63,8 +53,7 @@
   transform: rotate(0) translate(80px) rotate(0);
 }
 
-.three {
-  background-color: #3261c8;
+.bot_right {
   width: 80%;
   height: 80%;
   right: -20%;
@@ -74,8 +63,7 @@
   transform: rotate(0) translate(80px) rotate(0);
 }
 
-.four {
-  background-color: #7f48a4;
+.top_right {
   width: 80%;
   height: 90%;
   right: -20%;
@@ -85,90 +73,18 @@
   transform: rotate(0) translate(100px) rotate(0);
 }
 
-.five {
-  background-color: #7f48a4;
-  width: 85%;
-  height: 90%;
-  left: -30%;
-  top: -35%;
-  z-index: -1;
-  animation: rotateClockwise 12s linear infinite;
-  transform: rotate(0) translate(80px) rotate(0);
-}
-
-.six {
+.indigo {
   background-color: #604db7;
-  width: 80%;
-  height: 85%;
-  left: -20%;
-  bottom: -20%;
-  z-index: -3;
-  animation: rotateClockwise 10s linear infinite;
-  transform: rotate(0) translate(80px) rotate(0);
 }
 
-.seven {
-  background-color: #cf7b9f;
-  width: 80%;
-  height: 80%;
-  right: -20%;
-  bottom: -40%;
-  z-index: -2;
-  animation: rotateClockwise 8s linear infinite;
-  transform: rotate(0) translate(80px) rotate(0);
-}
-
-.eight {
-  background-color: #3261c8;
-  width: 80%;
-  height: 90%;
-  right: -20%;
-  top: -10%;
-  z-index: -4;
-  animation: rotateCounterClockwise 20s linear infinite;
-  transform: rotate(0) translate(100px) rotate(0);
-}
-
-.nine {
-  background-color: #3261c8;
-  width: 85%;
-  height: 90%;
-  left: -30%;
-  top: -35%;
-  z-index: -1;
-  animation: rotateClockwise 12s linear infinite;
-  transform: rotate(0) translate(80px) rotate(0);
-}
-
-.ten {
+.violet {
   background-color: #7f48a4;
-  width: 80%;
-  height: 85%;
-  left: -20%;
-  bottom: -20%;
-  z-index: -3;
-  animation: rotateClockwise 10s linear infinite;
-  transform: rotate(0) translate(80px) rotate(0);
 }
 
-.eleven {
-  background-color: #604db7;
-  width: 80%;
-  height: 80%;
-  right: -20%;
-  bottom: -40%;
-  z-index: -2;
-  animation: rotateClockwise 8s linear infinite;
-  transform: rotate(0) translate(80px) rotate(0);
-}
-
-.twelve {
+.pink {
   background-color: #cf7b9f;
-  width: 80%;
-  height: 90%;
-  right: -20%;
-  top: -10%;
-  z-index: -4;
-  animation: rotateCounterClockwise 20s linear infinite;
-  transform: rotate(0) translate(100px) rotate(0);
+}
+
+.blue {
+  background-color: #3261c8;
 }

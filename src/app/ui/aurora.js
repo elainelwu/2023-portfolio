@@ -1,34 +1,24 @@
-import auroraStyles from '@/app/ui/aurora.module.css';
+import styles from '@/app/ui/aurora.module.css';
 
-export default function Aurora() {
-  return (
-    <div className={auroraStyles.container}>
-      <div className={`${auroraStyles.base} ${auroraStyles.one}`}></div>
-      <div className={`${auroraStyles.base} ${auroraStyles.two}`}></div>
-      <div className={`${auroraStyles.base} ${auroraStyles.three}`}></div>
-      <div className={`${auroraStyles.base} ${auroraStyles.four}`}></div>
-    </div>
-  )
-}
+export default function Aurora({ page }) {
+  const getColor = (page, index) => {
+    const offset = page === 'about' ? 1 : page === 'work' ? 2 : 0;
+    const newIndex = (index + offset) % 4;
 
-export function AuroraAbout() {
-  return (
-    <div className={auroraStyles.container}>
-      <div className={`${auroraStyles.base} ${auroraStyles.five}`}></div>
-      <div className={`${auroraStyles.base} ${auroraStyles.six}`}></div>
-      <div className={`${auroraStyles.base} ${auroraStyles.seven}`}></div>
-      <div className={`${auroraStyles.base} ${auroraStyles.eight}`}></div>
-    </div>
-  )
-}
+    return (
+      newIndex === 1 ? styles.pink :
+        newIndex === 2 ? styles.blue :
+          newIndex === 3 ? styles.violet :
+            styles.indigo
+    );
+  };
 
-export function AuroraWork() {
   return (
-    <div className={auroraStyles.container}>
-      <div className={`${auroraStyles.base} ${auroraStyles.nine}`}></div>
-      <div className={`${auroraStyles.base} ${auroraStyles.ten}`}></div>
-      <div className={`${auroraStyles.base} ${auroraStyles.eleven}`}></div>
-      <div className={`${auroraStyles.base} ${auroraStyles.twelve}`}></div>
+    <div className={styles.container}>
+      <div className={`${styles.base} ${styles.top_left} ${getColor(page, 0)}`}></div>
+      <div className={`${styles.base} ${styles.bot_left} ${getColor(page, 1)}`}></div>
+      <div className={`${styles.base} ${styles.bot_right} ${getColor(page, 2)}`}></div>
+      <div className={`${styles.base} ${styles.top_right} ${getColor(page, 3)}`}></div>
     </div>
-  )
+  );
 }
