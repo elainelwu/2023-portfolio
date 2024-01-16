@@ -10,6 +10,7 @@ export default function AboutContent() {
       </div>
       <div className="flex flex-col items-center justify-center space-y-4">
         <Image src="/headshot.JPG"
+          alt="Headshot of Elaine Wu"
           width={200}
           height={200}
           className="rounded-full border-4 border-solid max-w-52 max-h-52"
@@ -20,18 +21,21 @@ export default function AboutContent() {
           <div className="flex flex-row space-x-4 mt-2">
             <Link href="mailto:ew457@cornell.edu">
               <Image src="/email-icon.svg"
+                alt="Send email"
                 width={36}
                 height={36}
               />
             </Link>
             <Link href="https://www.linkedin.com/in/elaine-wu-09440620b/">
               <Image src="/linkedin-icon.svg"
+                alt="Open LinkedIn page"
                 width={36}
                 height={36}
               />
             </Link>
             <Link href="https://github.com/elainelwu">
               <Image src="/github-icon.svg"
+                alt="Go to GitHub page"
                 width={36}
                 height={36}
               />

@@ -6,6 +6,7 @@ export default function NavBar() {
     <nav className="flex flex-row w-full justify-between px-6 pl-10 pr-12 py-6 z-20">
       <Link href="/">
         <Image src="/nav-logo.svg"
+          alt="Portfolio home"
           width={50}
           height={50}
           className="hover:invert hover:opacity-75 transition ease-in-out delay-100"

@@ -17,6 +17,7 @@ export default function Skills() {
       <h3 className="text-3xl">Currently learning...</h3>
       <ul className="font-medium flex flex-wrap justify-center items-center text-xl">
         <li className="bg-white px-2 py-1 rounded-md text-gray-800 mr-2 mb-2">Python</li>
+        <li className="bg-white px-2 py-1 rounded-md text-gray-800 mr-2 mb-2">JavaScript</li>
         <li className="bg-white px-2 py-1 rounded-md text-gray-800 mr-2 mb-2">React</li>
         <li className="bg-white px-2 py-1 rounded-md text-gray-800 mr-2 mb-2">Next.js</li>
         <li className="bg-white px-2 py-1 rounded-md text-gray-800 mr-2 mb-2">Adobe Illustrator</li>

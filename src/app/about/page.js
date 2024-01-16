@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import Aurora from '@/app/ui/aurora.js'
 import NavBar from '@/app/ui/nav-bar.js'
 import AboutContent from '@/app/ui/about.js'
