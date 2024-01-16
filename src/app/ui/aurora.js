@@ -14,11 +14,13 @@ export default function Aurora({ page }) {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={`${styles.base} ${styles.top_left} ${getColor(page, 0)}`}></div>
-      <div className={`${styles.base} ${styles.bot_left} ${getColor(page, 1)}`}></div>
-      <div className={`${styles.base} ${styles.bot_right} ${getColor(page, 2)}`}></div>
-      <div className={`${styles.base} ${styles.top_right} ${getColor(page, 3)}`}></div>
+    <div className={styles.sticky}>
+      <div className={styles.container}>
+        <div className={`${styles.base} ${styles.top_left} ${getColor(page, 0)}`}></div>
+        <div className={`${styles.base} ${styles.bot_left} ${getColor(page, 1)}`}></div>
+        <div className={`${styles.base} ${styles.bot_right} ${getColor(page, 2)}`}></div>
+        <div className={`${styles.base} ${styles.top_right} ${getColor(page, 3)}`}></div>
+      </div>
     </div>
-  );
+  )
 }
